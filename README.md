@@ -1,4 +1,4 @@
-**Oxford Nanopore Technology (ONT) Sequencing for the detection of *Xanthomonas citri* subsp. *malvacearum* **
+Oxford Nanopore Technology (ONT) Sequencing for the detection of *Xanthomonas citri* subsp. *malvacearum* 
 ============================================================================================================
 
 This analysis workflow was developed to process data generated using an ONT sequencing platform and analyse it for the presence of *Xanthomonas citri* subsp. *malvacearum* reads. 
