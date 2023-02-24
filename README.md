@@ -230,11 +230,15 @@ Alternatively Kraken2 (Wood *et al.*, 2019) can be used to analyse the raw reads
 Details on building a kraken2 database from genomes in RefSeq can be found at:
 https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
 
-Kraken2 can be run on either the metaflye assembly or the raw reads.
+Kraken2 can be run on either the metaflye assembly or the filtered reads.
 
 Kraken2 on the metaflye assembly:
 ```{bash}
 kraken2 --db directory/kraken2db/Refseq91/ --threads 20 --unclassified-out directory/kraken/SampleName_kraken2fl.unclassified.fasta --report directory/kraken/SampleName_kraken2fl.report --output directory/kraken/SampleName_kraken2fl.txt directory/flye/assembly.fasta
+```
+Kraken2 on the filtered reads:
+```{bash}
+kraken2 --db directory/kraken2db/Refseq91/ --threads 20 --unclassified-out directory/kraken/SampleName_kraken2fl.unclassified.fasta --report directory/kraken/SampleName_kraken2fl.report --output directory/kraken/SampleName_kraken2fl.txt directory/SampleName_filtered_l1000.fastq
 ```
 
 Visualise using krona
